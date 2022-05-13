@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 62.50%;
+  font-family: 'Muli', sans-serif;
+}
+ 
+
+/* Layouts */
+header,footer{
+  display: block;
+  text-align: center;
+  height: 10vh;
+  width: 100%;
+  font-size: .8rem;
+  background-color: white;
+  color: black;
+  
+}
+
+footer > a {
+  margin: 1em;
+  color: black;
+}
+
+.main-container{
+    display:flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 170vh;                                        
+    font-size: 1em;
+    background-color: black;
+    color: #fff;
+} 
+
+.slide-container{
+  display:flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    height: 95vh;
+    width:90%;                                        
+    background-color: white;
+}
+  .panel {
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: .3em;
+    height: 92vh;
+    width: 100vw;
+    -webkit-transition: all 700ms ease-in;
+  }
+
+  .panel > a{
+    color: black;
+  }
+
+  .panel.active{
+    flex: 5;
+    text-decoration: none;
+    color: white;
+    font-size: 1.8em;
+  }
+
+  
+  .styleButton{
+      font-size: 2em;    
+      margin-top: .5em;
+      width: 30%;
+  }
+
+  i{
+    font-size: 1.8em;
+  }
+ 
+  .others{
+    font-size: 1.3em;
+    overflow-y: scroll;
+    line-height: 1.8em;
+    background-color: #fff;
+    letter-spacing: 1px;
+    color: black;
+    height: 50vh;
+
+  }
+
+
+
+
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none;
+  }
+
+  footer,
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 7rem;
+    font-size: .5rem;
+    background-color: white;
+    color: black;
+  }
+  .iconStyle{
+    font-size: 1.3em;   
+  }
+
+  
+  .styleButton{
+    font-size: 2em;    
+    margin-top: 1em;
+    width: 80%;
+}
+  footer {
+    background-color: white;
+    color: black;
+    height: 20vh;
+  }
+
+  footer > a {
+    font-size: 15px;
+    margin: .3em;
+    
+  }
+  footer > p{
+    font-size: 2em;
+  }
+  .others{
+    font-size: 1.5em;
+    overflow-y: scroll;
+    line-height: 1.3em;
+    background-color: #fff;
+    letter-spacing: 1px;
+    color: black;
+    height: 50vh;
+
+  }
+
+
+} 
+
+
+
+
+
+
